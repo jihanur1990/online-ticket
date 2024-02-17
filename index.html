@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="buy-ticket w-[90%] lg:max-w-[1170px] bg-slate-300 flex flex-col lg:flex-row mx-auto justify-between">
+        <div class="w-full lg:w-[60%] mr-8" >
+            <div class="seat-plan bg-white grid grid-cols-4 gap-4">
+                <div class="seat bg-slate-300 w-[50px]  border-red-400 border-2">
+                    <h2 class="text-3xl font-bold">A1</h2>
+                </div>
+                <div class="seat bg-slate-300 w-[50px]">
+                    <h2 class="text-3xl font-bold">A2</h2>
+                </div>
+                <div class="seat bg-slate-300 w-[50px]">
+                    <h2 class="text-3xl font-bold">A3</h2>
+                </div>
+                <div class="seat bg-slate-300 w-[50px]">
+                    <h2 class="text-3xl font-bold">A4</h2>
+                </div>
+                <div class="seat bg-slate-300 w-[50px]">
+                    <h2 class="text-3xl font-bold">A4</h2>
+                </div>
+                <div class="seat bg-slate-300 w-[50px]">
+                    <h2 class="text-3xl font-bold">A4</h2>
+                </div>
+                <div class="seat bg-slate-300 w-[50px]">
+                    <h2 class="text-3xl font-bold">A4</h2>
+                </div>
+                <div class="seat bg-slate-300 w-[50px]">
+                    <h2 class="text-3xl font-bold">A4</h2>
+                </div>
+                <div class="seat bg-slate-300 w-[50px]">
+                    <h2 class="text-3xl font-bold">A4</h2>
+                </div>
+                <div class="seat bg-slate-300 w-[50px]">
+                    <h2 class="text-3xl font-bold">A4</h2>
+                </div>
+            </div>
+
+        </div>
+        <div class="selected-seat lg:w-[40%]">
+            <table class="w-full table-fixed">
+                <thead>
+                  <tr>
+                    <th>Seat<sup class="nt" id="nt" >0</sup> </th>
+                    <th>Artist</th>
+                    <th>Year</th>
+                  </tr>
+                </thead>
+                <tbody id="tb">
+                </tbody>
+            </table>
+            <div class="total inline-flex justify-between w-full px-5 border-red-400 border-2">
+                <h3>Total Price</h2>
+                <p id="tp">0</p>
+            </div>
+            <div class="total inline-flex justify-between w-full px-5">
+                <input type="text" id="coupon" placeholder="Ente the coupon code">
+                <button type="button" class="border-t-neutral-200" id="coupon-btn">Apply Coupon</button>
+            </div>
+            <div class="gtotal inline-flex justify-between w-full px-5 border-red-400 border-2">
+                <h3>Grand Total Price</h2>
+                <p id="gtp">0</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

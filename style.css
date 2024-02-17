@@ -1,0 +1,13 @@
+td, thead{
+    text-align: center;
+}
+thead{
+    border-bottom: 2px dotted gray;
+}
+table{
+    border-bottom: 2px solid yellow;
+    margin-bottom: 16px;
+}
+#tb{
+    min-height: 100px;
+}
